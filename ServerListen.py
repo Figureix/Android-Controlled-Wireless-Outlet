@@ -45,7 +45,7 @@ class Off3(tornado.web.RequestHandler):
                 
 # This here is the list of address/extentions the webserver will react to.
 # If I type into a computer (or Tasker:HTTP Get action) "{RPiaddress}:{Port for this server}/on/"   ex: "192.168.1.50:7777/on/"
-#	then the class "On" (at line 16) will be executed by the server as a response to the request.
+#	then the class "On" (at line 10) will be executed by the server as a response to the request.
 application = tornado.web.Application([
 	(r"/on/", On),
 	(r"/off/", Off),
